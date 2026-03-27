@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vrn-bot
+    env: python
+    buildCommand: pip install flask python-telegram-bot
+    startCommand: python app.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8686893037:AAF63iFUhicT13-aNnSbskvWp6_MrVBzJjc

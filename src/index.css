@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap');
+
+:root {
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-display: 'Unbounded', system-ui, sans-serif;
+  --vrn-text: #0c0c0c;
+  --vrn-text-soft: #3d3d3d;
+  --vrn-muted: #6b6b6b;
+  --vrn-border: rgba(0, 0, 0, 0.1);
+  --vrn-surface: rgba(255, 255, 255, 0.72);
+  --vrn-shadow:
+    0 0.5rem 1.75rem rgba(0, 0, 0, 0.08),
+    0 0.15rem 0.4rem rgba(0, 0, 0, 0.04);
+
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root.dark {
+  --vrn-text: #f0f0f0;
+  --vrn-text-soft: #a0a0a0;
+  --vrn-muted: #808080;
+  --vrn-border: rgba(255, 255, 255, 0.15);
+  --vrn-surface: rgba(30, 30, 30, 0.85);
+  --vrn-shadow:
+    0 0.5rem 1.75rem rgba(0, 0, 0, 0.3),
+    0 0.15rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  color: var(--vrn-text);
+  background: fixed
+    linear-gradient(
+      165deg,
+      #ffffff 0%,
+      #f0f0f0 28%,
+      #9a9a9a 62%,
+      #1f1f1f 100%
+    );
+}
+
+html.dark body {
+  background: fixed
+    linear-gradient(
+      165deg,
+      #1a1a1a 0%,
+      #2d2d2d 30%,
+      #404040 60%,
+      #0a0a0a 100%
+    );
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  color: var(--vrn-text);
+  background: fixed
+    linear-gradient(
+      165deg,
+      #ffffff 0%,
+      #f0f0f0 28%,
+      #9a9a9a 62%,
+      #1f1f1f 100%
+    );
+}
+
+#root {
+  min-height: 100dvh;
+}
